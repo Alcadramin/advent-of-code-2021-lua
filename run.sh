@@ -10,11 +10,11 @@ if [[ -z "$1" || -z "$2" ]]
     exit 1
 fi
 
-FILE=day$1/chapter$2.lua
+FILE=day$1/chapter$2/chapter$2.lua
 
 if [ -f "$FILE" ]; then
     echo -e "${BOLD}Running:${NORMAL} $FILE\n"
-    lua day$1/chapter$2.lua
+    lua day$1/chapter$2/chapter$2.lua
 else 
     echo "$FILE does not exist."
     exit 1
