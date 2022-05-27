@@ -22,11 +22,12 @@ $ ./run.sh <day>
 
 ### Solutions
 
-- Every problem solution lives in the day folder with the chapter. Here is a full list:
+- Every problem solution lives in the relevant day folder including all the parts. Here is a full list:
 
 | Day    | Solution                   |
 | ------ | -------------------------- |
 | Day 01 | [main.lua](day01/main.lua) |
+| Day 02 | [main.lua](day02/main.lua) |
 
 #
 

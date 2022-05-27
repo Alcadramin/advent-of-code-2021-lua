@@ -1,19 +1,19 @@
-local Polyfills = {}
+local Utils = {}
 
 -- Checks if file exists
-function Polyfills.file_exists(file)
+function Utils.file_exists(file)
     local f = io.open(file, "rb")
     if f then f:close() end
     return f ~= nil
 end
 
 -- Prints table contents
-function Polyfills.print_r(arr, indentLevel)
+function Utils.print_r(arr, indentLevel)
     local str = ""
     local indentStr = "#"
 
     if (indentLevel == nil) then
-        print(Polyfills.print_r(arr, 0))
+        print(Utils.print_r(arr, 0))
         return
     end
 
@@ -22,7 +22,7 @@ function Polyfills.print_r(arr, indentLevel)
     for index, value in pairs(arr) do
         if type(value) == "table" then
             str = str .. indentStr .. index .. ": \n" ..
-                      print_r(value, (indentLevel + 1))
+                Utils.print_r(value, (indentLevel + 1))
         else
             str = str .. indentStr .. index .. ": " .. value .. "\n"
         end
@@ -30,4 +30,4 @@ function Polyfills.print_r(arr, indentLevel)
     return str
 end
 
-return Polyfills
+return Utils
