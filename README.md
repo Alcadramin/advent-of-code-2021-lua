@@ -1,6 +1,14 @@
 <p align="center">
   <img src="https://adventofcode.com/favicon.png" alt="Advent of Code" />
 </p>
+<p align="center">
+  <a href="https://github.com/hlissner/doom-emacs">
+    <img src="https://img.shields.io/badge/With 🤍 and-Doom Emacs-blueviolet?style=flat-square&logo=GNU Emacs&logoColor=white" alt="Doom Emacs" />
+  </a>
+  <a href="https://github.com/Alcadramin/advent-of-code-2021-lua/blob/main/LICENSE.md" />
+    <img alt="GitHub" src="https://img.shields.io/github/license/Alcadramin/advent-of-code-2021-lua?style=flat-square" />
+  </a>
+</p>
 
 #
 
